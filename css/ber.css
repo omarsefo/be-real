@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: linear-gradient(to right ,#080014,#080014, #414141,#05050e);
+}
+header
+{
+    display: fixed;
+    z-index: 999;
+}
+header .maxw
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+header .logo
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+font-family: 'Tajawal', sans-serif;
+}
+header .logo span{
+    padding: 5px 5px;
+    background: linear-gradient(to left, #6e14ff, #cc01ff);
+    border-radius: 4px;
+    font-weight: 500;
+font-family: 'Tajawal', sans-serif;
+}
+header ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0 0 0 30px;
+}
+header ul a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 0 50px;
+    font-family: 'Tajawal', sans-serif;
+}
+header ul a span
+{
+    padding: 5px 17px;
+    background: linear-gradient(to left, #6e14ff, #cc01ff);
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif;}
+article
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+article .maxw
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    width: 100%;
+}
+article .maxw .content
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    min-height: 634px;
+}
+article .maxw .content .textb
+{
+    height: 100%;
+}
+article .maxw .content .textb h2
+{
+    font-size: 65px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif;
+}
+article .maxw .content .textb p
+{
+    font-size: 17px;
+    font-family: 'Tajawal', sans-serif;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+article .maxw .content .textb .btn1
+{
+    background: linear-gradient(to left, #6e14ff, #cc01ff);
+    padding: 10px 34px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 600;
+}
+article .maxw .content .textb .btn1:hover
+{
+    border: 2px solid #6e14ff;
+    background: none;
+    padding: 8px 32px;
+}
+article .maxw .content .textb .btn2
+{
+    padding: 8px 26px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 17px;
+    border: 2px solid #6e14ff;
+    margin-left: 5px;
+}
+article .maxw .content .textb .btn2:hover
+{
+    background: linear-gradient(to left, #6e14ff, #cc01ff);
+}
+
+article .maxw .content .textb .soc
+{
+    color: #fff;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+article .maxw .content .textb .soc .line
+{
+    width: 150px;
+    height: 2px;
+    background: #fff;
+    margin-left: 28px;
+}
+article .maxw .content .textb .soc .fab
+{
+    cursor: pointer;
+    font-size: 27px !important;
+}
+article .maxw .content .textb .soc .f
+{
+    margin-left: 28px;
+
+}
+article .maxw .content .imgb
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article .maxw .content .imgb img
+{
+    max-height:634px;
+}
+.btn
+{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: rgb(146, 146, 146);
+    cursor: pointer;
+}
+.btn i
+{
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    font-size: 23px;
+    color: #fff;
+}
+
+
