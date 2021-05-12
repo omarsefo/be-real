@@ -271,7 +271,7 @@ article .maxw .content .textb .soc{
 }
 article .maxw .content .imgb img{
     max-height:500px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 article .maxw .content .textb h2
 {
@@ -296,6 +296,11 @@ article .maxw .content .textb
     article .maxw .content .imgb img{
         max-height:500px;
     }
+    .btn
+{
+z-index: 9;
+
+}
 }
 @media (max-width:678px){
     article .maxw .content .imgb img{
