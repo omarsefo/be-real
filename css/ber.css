@@ -52,6 +52,10 @@ font-family: 'Tajawal', sans-serif;
     margin: 0 0 0 50px;
     font-family: 'Tajawal', sans-serif;
 }
+.menus .menu a:hover
+{
+    transform: scale(1.05);
+}
 .menu .menu a span
 {
     padding: 5px 17px;
@@ -160,6 +164,11 @@ article .maxw .content .textb .soc
     align-items: center;
     justify-content: flex-start;
 }
+article .maxw .content .textb .soc i:hover
+{
+    transform: scale(1.05);
+}
+
 article .maxw .content .textb .soc .line
 {
     width: 150px;
@@ -213,6 +222,7 @@ article .maxw .content .imgb img
         padding: 0 0 0 0;
         position: fixed;
         background: #333;
+        display: none;
         opacity: 0.95;
         height: 100vh;
         width: 100%;
@@ -220,13 +230,13 @@ article .maxw .content .imgb img
         left: 0;
         text-align: center;
         padding-left: 0;
-        padding-top: 70px;
+        padding-top: 30px;
         z-index: 9999999;
         transition: left 0.43s ease;
       }
       .menus .menu li {
-        display: block;
-        padding: 30px 0;
+        display:grid;
+        padding: 20px 0;
       }
       .menus .menu li a {
         display: inline-block;
@@ -287,7 +297,7 @@ article .maxw .content .textb
     article .maxw .content .textb h2
     {
         font-size: 55px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     article .maxw .content .textb
     {
@@ -299,7 +309,6 @@ article .maxw .content .textb
     .btn
 {
 z-index: 9;
-
 }
 }
 @media (max-width:678px){

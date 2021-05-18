@@ -11,9 +11,9 @@ btn1.addEventListener('click',()=>{
         },5000)
 });
 
-const menup = document.querySelector('.menu');
-const closep = document.querySelector('.close-menu');
-const openp = document.querySelector('.menu-btn');
+const menup = document.getElementById('menu');
+const closep = document.getElementById('close-menu');
+const openp = document.getElementById('menu-btn');
 var as1 =document.getElementsByTagName('a')[1];
 var as2 =document.getElementsByTagName('a')[2];
 var as3 =document.getElementsByTagName('a')[3];
@@ -22,7 +22,8 @@ var as5 =document.getElementsByTagName('a')[5];
 var as6 =document.getElementsByTagName('a')[6];
 var as7 =document.getElementsByTagName('a')[7];
 
-
+window.addEventListener('load',close);
+document.addEventListener('load',close);
 openp.addEventListener('click',show);
 closep.addEventListener('click',close);
     as1.addEventListener('click',close);
@@ -37,5 +38,5 @@ function show() {
     menup.style.left ='0';
 }
 function close() {
-    menup.style.left ='-100%';
+    menup.style.left ='-150%';
 }
