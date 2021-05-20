@@ -6,7 +6,30 @@
 }
 body
 {
-    background:radial-gradient(circle, #958bac,#100231 70%);
+    overflow: hidden;
+    background:radial-gradient(circle at 65% 68%, #756380,#200231 60%);
+}
+.cir1
+{
+    position: absolute;
+    top: -100px;
+    right: -90px;
+    width: 70%;
+    height: 140%;
+    z-index: -1;
+    border: 2px solid rgba(238, 238, 238, 0.39);
+    border-radius: 50%;
+}
+.cir
+{
+    position: absolute;
+    top: 100px;
+    right: 110px;
+    width: 40%;
+    height: 80%;
+    z-index: -1;
+    border: 2px solid rgba(238, 238, 238, 0.39);
+    border-radius: 50%;
 }
 .menus
 {
@@ -164,9 +187,13 @@ article .maxw .content .textb .soc
     align-items: center;
     justify-content: flex-start;
 }
+article .maxw .content .textb .soc i
+{
+    transition: all 0.5s ease;
+}
 article .maxw .content .textb .soc i:hover
 {
-    transform: scale(1.05);
+    transform: translateY(-10px);
 }
 
 article .maxw .content .textb .soc .line
@@ -196,7 +223,8 @@ article .maxw .content .imgb
 }
 article .maxw .content .imgb img
 {
-    max-height:634px;
+    margin-top: 43px;
+    max-height:624px;
 }
 .btn
 {
