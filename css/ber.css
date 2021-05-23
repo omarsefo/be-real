@@ -6,7 +6,9 @@
 }
 body
 {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100vh;
     background:radial-gradient(circle at 65% 68%, #756380,#200231 60%);
 }
 .cir1
@@ -49,14 +51,26 @@ body
     font-size: 20px;
     color: #fff;
     font-weight: 500;
-font-family: 'Tajawal', sans-serif;
-}
+    font-family: 'Tajawal', sans-serif;
+    opacity: 0;
+    animation: left 0.5s ease forwards;
+    }
+    @keyframes left{
+        0%{
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        100%{
+          transform: translateX(0px);
+          opacity: 1;
+        }
+      }
 .menus .logo span{
     padding: 5px 5px;
     background: linear-gradient(to left, #6e14ff, #cc01ff);
     border-radius: 4px;
     font-weight: 500;
-font-family: 'Tajawal', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 .menus .menu 
 {
@@ -68,18 +82,33 @@ font-family: 'Tajawal', sans-serif;
 }
 .menus .menu a
 {
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin: 0 0 0 50px;
     font-family: 'Tajawal', sans-serif;
+    transition: all 0.5s ease;
+    opacity: 0;
+    animation: ups 0.5s ease forwards;
+    animation-delay:calc(0.5s * var(--i));
 }
+@keyframes ups{
+    0%{
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 .menus .menu a:hover
 {
-    transform: scale(1.05);
+    opacity: 0.5;
 }
-.menu .menu a span
+.menus .menu a span
 {
     padding: 5px 17px;
     background: linear-gradient(to left, #6e14ff, #cc01ff);
@@ -131,20 +160,61 @@ article .maxw .content .textb
 article .maxw .content .textb h2
 {
     font-size: 65px;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 20px;
     color: #fff;
     font-weight: 600;
     font-family: 'Tajawal', sans-serif;
-}
+    opacity: 0;
+    animation: left 0.5s ease forwards;
+    animation-delay: 3s;
+    }
+    @keyframes left{
+        0%{
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        100%{
+          transform: translateX(0px);
+          opacity: 1;
+        }
+      }
 article .maxw .content .textb p
 {
     font-size: 17px;
     font-family: 'Tajawal', sans-serif;
     color: #fff;
     padding-bottom: 40px;
-}
-
+    opacity: 0;
+    animation: left 0.5s ease forwards;
+    animation-delay: 3.4s;
+    }
+    @keyframes left{
+        0%{
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        100%{
+          transform: translateX(0px);
+          opacity: 1;
+        }
+      }
+article .maxw .content .textb .btns{
+    margin-top: 0px;
+    opacity: 0;
+    animation: left 0.5s ease forwards;
+    animation-delay: 3.7s;
+    }
+    @keyframes left{
+        0%{
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        100%{
+          transform: translateX(0px);
+          opacity: 1;
+        }
+      }
 article .maxw .content .textb .btn1
 {
     background: linear-gradient(to left, #6e14ff, #cc01ff);
@@ -182,11 +252,24 @@ article .maxw .content .textb .btn2:hover
 article .maxw .content .textb .soc
 {
     color: #fff;
-    margin-top: 180px;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    opacity: 0;
+    animation: ups 0.5s ease forwards;
+    animation-delay:4s;
 }
+@keyframes ups{
+    0%{
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 article .maxw .content .textb .soc i
 {
     transition: all 0.5s ease;
@@ -225,7 +308,20 @@ article .maxw .content .imgb img
 {
     margin-top: 43px;
     max-height:624px;
+    opacity: 0;
+    animation: ups 0.5s ease forwards;
+    animation-delay:4s;
 }
+@keyframes ups{
+    0%{
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 .btn
 {
     position: absolute;
@@ -246,6 +342,13 @@ article .maxw .content .imgb img
     color: #fff;
 }
 @media (max-width:1322px){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .cir,.cir1{
+        display: none;
+    }
     .menus .menu {
         padding: 0 0 0 0;
         position: fixed;
@@ -285,6 +388,9 @@ article .maxw .content .imgb img
         top:30px;
         right: 49px;
       }
+      article .maxw .content .imgb{
+          width: 0%;
+      }
 article .maxw .content .imgb img{
     max-height:600px;
     position: absolute;
@@ -309,11 +415,11 @@ article .maxw .content .textb .soc{
 }
 article .maxw .content .imgb img{
     max-height:500px;
-    opacity: 0.5;
+    opacity: 0;
 }
 article .maxw .content .textb h2
 {
-    font-size: 60px;
+    font-size: 65px;
     padding-top: 50px;
 }
 article .maxw .content .textb
@@ -327,11 +433,15 @@ article .maxw .content .textb
         font-size: 55px;
         padding-top: 30px;
     }
+    article .maxw .content .textb .btns{
+        margin-top: 10px;
+    }
     article .maxw .content .textb
     {
         width: 100%;
     }
     article .maxw .content .imgb img{
+        margin-top: 0;
         max-height:500px;
     }
     .btn
@@ -343,10 +453,22 @@ z-index: 9;
     article .maxw .content .imgb img{
         max-height:400px;
     }
+    article .maxw .content .textb
+    {
+        width: 100%;
+    }
+    article .maxw .content .textb .soc .line
+{
+display: none;
+}
 }
 @media (max-width:496px){
     article .maxw .content .imgb img{
         max-height:300px;
+    }
+    article .maxw .content .textb
+    {
+        width: 100%;
     }
     article .maxw
 {
