@@ -159,7 +159,7 @@ article .maxw .content .textb
 }
 article .maxw .content .textb h2
 {
-    font-size: 65px;
+    font-size: 70px;
     padding-top: 100px;
     padding-bottom: 20px;
     color: #fff;
@@ -252,7 +252,7 @@ article .maxw .content .textb .btn2:hover
 article .maxw .content .textb .soc
 {
     color: #fff;
-    margin-top: 200px;
+    margin-top: 180px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
