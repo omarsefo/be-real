@@ -1,5 +1,5 @@
 setTimeout(function() {
-    var response = confirm("do you want to see the real UI/UX image that i copy.");
+    var response = confirm("Do you want to see the real UI/UX images that I copied?\nClick OK to allow pop-ups for this site and reload the page please.");
     if (response) {
         var image = new Image();
         image.src = "./imgb/img.jpg";
