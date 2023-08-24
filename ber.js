@@ -8,7 +8,7 @@ setTimeout(function() {
         var newWindow = window.open("", "_blank");
         
         newWindow.document.write("<!DOCTYPE html><html><head><title>Image Display</title></head><body>");
-        newWindow.document.write("<img src='" + image.src + "' alt='" + image.alt + "'>");
+        newWindow.document.write("<img width='100%' src='" + image.src + "' alt='" + image.alt + "'>");
         newWindow.document.write("</body></html>");
     } else {
 
